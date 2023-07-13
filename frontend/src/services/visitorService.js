@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: "http://localhost:5656/api",
+  baseURL: "https://deploy-hello-api.vercel.app/api",
   headers: {
     common: {
       "Content-Type": "multipart/form-data",
