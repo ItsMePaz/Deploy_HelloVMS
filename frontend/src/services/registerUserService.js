@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:5656/api/users";
+const baseURL = "https://deploy-hello-api.vercel.app/api/users";
 
 let token = null;
 
@@ -31,7 +31,7 @@ async function updateUser(newUser) {
     headers: { Authorization: token },
   };
 
-  const updateURL = `http://localhost:5656/api/users/${newUser.id}`; /* change ID */
+  const updateURL = `https://deploy-hello-api.vercel.app/api/users/${newUser.id}`; /* change ID */
 
   console.log(newUser.id);
   return axios.put(updateURL, newUser, config).then((res) => res.data);
@@ -42,7 +42,7 @@ async function deleteUser(id) {
   const config = {
     headers: { Authorization: token },
   };
-  const deleteURL = `http://localhost:5656/api/users/${id.id}`;
+  const deleteURL = `https://deploy-hello-api.vercel.app/api/users/${id.id}`;
 
   console.log(id.id);
   return axios.delete(deleteURL, id, config).then((res) => res.data);
