@@ -1,0 +1,143 @@
+.remove-user-modal {
+  position: fixed;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 17%;
+  background-color: #ffffff;
+  gap: 1em;
+  padding: 1em;
+  width: 30%;
+  height: 30%;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.background-modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.316);
+  width: 110vw;
+  height: 100%;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 280px) and (max-width: 708px) {
+  .cell-border {
+    max-width: 200px;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cell-border > div {
+    flex: 0 0 3em;
+  }
+
+  .back-drop {
+    width: 300px;
+    height: 240px;
+  }
+
+  .cell-title-border {
+    display: none;
+  }
+
+  .remove-user-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: #ffffff;
+
+    width: 40%;
+    height: 20%;
+    border-radius: 5px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .modalButton {
+    color: white;
+    background-color: black;
+
+    border: 1px black solid;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    width: 75px;
+  }
+  .modal-button-placement {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 20px;
+  }
+
+  .cellButton {
+    color: white;
+    background-color: black;
+
+    border: 1px black solid;
+
+    border-radius: 10px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    align-items: center;
+    transition: transform 0.2s;
+  }
+}
+
+@media only screen and (min-width: 709px) and (max-width: 1124px) {
+  .cell-border {
+    max-width: 550px;
+    height: 5em;
+  }
+
+  .cell-border > div {
+    flex: 0 0 10em;
+  }
+
+  .back-drop {
+    width: 650px;
+  }
+
+  /*  */
+  .remove-user-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: #ffffff;
+
+    width: 40%;
+    height: 20%;
+    border-radius: 5px;
+    flex-direction: column;
+  }
+
+  .modalButton {
+    color: white;
+    background-color: black;
+
+    border: 1px black solid;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 708px) {
+}
