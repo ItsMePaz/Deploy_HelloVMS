@@ -1,4 +1,4 @@
-import "../app.css";
+
 import "../styles/userManagementResp.css";
 import { useState } from "react";
 
